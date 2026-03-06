@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TERMINAL | ADMIN ACCESS</title>
+<link rel="stylesheet" href="style.css"> </head>
+<body class="admin-body">
+<h1>[ SYSTEM_ADMIN_DASHBOARD ]</h1>
+
+<section class="admin-card">
+<h2>> LOG_NEW_DISCOVERY</h2>
+<input type="text" id="bug-name" placeholder="Vulnerability Name">
+<select id="bug-severity">
+<option value="Low">Low</option>
+<option value="Medium">Medium</option>
+<option value="High">High</option>
+<option value="Critical">Critical</option>
+</select>
+<textarea id="bug-details" placeholder="Technical Description..."></textarea>
+<button onclick="saveBug()">POST TO PORTFOLIO</button>
+</section>
+
+<section class="admin-card">
+<h2>> UPLOAD_CERTIFICATE</h2>
+<input type="text" id="cert-title" placeholder="Certificate Name (e.g., CEH)">
+<input type="text" id="cert-url" placeholder="Image URL or Link">
+<button onclick="saveCert()">ADD CERTIFICATE</button>
+</section>
+
+<script src="admin.js"></script>
+</body>
+</html>
